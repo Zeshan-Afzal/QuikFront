@@ -7,7 +7,6 @@ import BestDeals from "../components/sectons/BestDeals";
 import FeaturedProducts from "../components/sectons/FeaturedProducts";
 import Events from "../components/events/Evants";
 import Sponcerd from "../components/layout/Sponcerd";
-import Footer from "../components/layout/Footer";
 
 function HomePage() {
   return (
@@ -20,7 +19,6 @@ function HomePage() {
         <Events />
         <FeaturedProducts />
         <Sponcerd />
-        <Footer />
       </div>
     </>
   );

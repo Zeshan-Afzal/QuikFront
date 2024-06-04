@@ -18,7 +18,7 @@ function ProductCard({ product }) {
   return (
     <>
       <div className="  w-full  min-h-[370px] bg-white rounded-md shadow-sm p-3 sm:w-[270px] flex flex-col gap-4 relative">
-        <Link to={`/product/${product.name}`}>
+        <Link to={`/product/${product.id}`}>
           <img
             className=" w-56 h-52  mx-auto"
             src={product.image_Url[0].url}

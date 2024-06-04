@@ -13,5 +13,13 @@
   }
 }
 body {
+  scroll-behavior: smooth;
   background-color: rgb(242, 245, 248);
+}
+
+.transition-right {
+  transition: right 0.5s ease-in-out;
+}
+.right-click {
+  right: -25%;
 }

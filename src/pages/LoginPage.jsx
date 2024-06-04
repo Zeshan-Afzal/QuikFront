@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import Input from "../components/Input";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { loadUser } from "../store/actions/userActions";
+import { useDispatch } from "react-redux";
+import Header from "../components/layout/Header";
 
 function LoginPage() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
@@ -32,8 +36,9 @@ function LoginPage() {
       );
       const data = await res.json();
       if (!data.success) return toast.error(data.message);
-      console.log(data);
+
       toast.success(data.message);
+      dispatch(loadUser());
       navigate("/");
     } catch (error) {
       console.log(error.message);
@@ -43,6 +48,7 @@ function LoginPage() {
 
   return (
     <>
+      <Header />
       <div className=" text-center">
         <h1 className=" font-bold text-2xl mt-10">Login to your account</h1>
       </div>

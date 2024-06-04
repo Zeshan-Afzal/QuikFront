@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Input from "../components/Input";
 import { CgProfile } from "react-icons/cg";
 import { toast } from "react-toastify";
+import Header from "../components/layout/Header";
 
 function SignUpPages() {
   const navigate = useNavigate();
@@ -59,6 +60,7 @@ function SignUpPages() {
 
   return (
     <>
+      <Header />
       <div className=" text-center">
         <h1 className=" font-bold text-2xl mt-10">Sign up</h1>
       </div>
