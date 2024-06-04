@@ -205,7 +205,7 @@ function Header() {
             setOpenMenu={setOpenMenu}
             navItems={navItems}
             setOpenWishList={setOpenWishList}
-            isAuthenticated={isAuthenticated}
+            // isAuthenticated={isAuthenticated}
           />
         )}
       </div>
