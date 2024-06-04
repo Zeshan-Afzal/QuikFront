@@ -42,7 +42,7 @@ function ProductDetails({ setViewDetail, product, setIsLiked, isLiked }) {
             ({product.total_sell}) Sold Out
           </p>
         </div>
-        <div className=" w-[50%] p-4 flex flex-col gap-5">
+        <div className=" w-[50%] p-4 flex flex-col gap-7 md:gap-5">
           <div className=" w-[80%]">
             <h1 className=" md:font-bold font-semibold text-xl md:text-3xl line-clamp-2">
               {product.name}
