@@ -74,7 +74,7 @@ function Header() {
                 <Link
                   key={i}
                   onClick={() => setSearchQuery("")}
-                  to={`product/${item.id}`}
+                  to={`/product/${item.id}`}
                   className=" w-full h-24 flex gap-2 p-2   items-center border-b "
                 >
                   <img
