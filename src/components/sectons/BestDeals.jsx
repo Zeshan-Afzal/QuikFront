@@ -16,7 +16,7 @@ function BestDeals() {
       <h1 className=" font-semibold md:font-bold font-serif text-xl md:text-3xl mb-7">
         Best Deals
       </h1>
-      <div className=" flex flex-wrap justify-center md:justify-normal gap-3 md:gap-8">
+      <div className=" flex flex-wrap justify-center md:justify-normal gap-5 md:gap-8">
         {dealsData.length > 0 &&
           dealsData.map((item, i) => <ProductCard key={i} product={item} />)}
       </div>
